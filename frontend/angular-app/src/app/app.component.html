@@ -1,0 +1,24 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="grid-container">
+  <mat-grid-list cols="2" >
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <test-file-list [files]="files$ | async" (fileSelected)="onFileSelected($event)"></test-file-list>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <test-table-list [tables]="tables$ | async" (tableSelected)="onTableSelected($event)"></test-table-list>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

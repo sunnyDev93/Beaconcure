@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }.grid-container {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  mat-grid-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-icon {
+    /* Your styles for icons */
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
