@@ -1,0 +1,9 @@
+mat-nav-list a {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  mat-nav-list a:hover {
+    background-color: #e0e0e0; /* Or any color of your choice */
+  }
+  
