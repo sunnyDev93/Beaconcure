@@ -1,0 +1,10 @@
+<mat-card *ngIf="table">
+  <mat-card-header>
+    <mat-card-title>{{ table.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Rows: {{ table.rows }}</p>
+    <p>Columns: {{ table.columns }}</p>
+    <p>Notes: {{ table.notes }}</p>
+  </mat-card-content>
+</mat-card>
